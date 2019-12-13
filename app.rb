@@ -16,8 +16,8 @@ class App < Sinatra::Base
   get '/say/:number/:phrase' do
     @number = params[:number]
     @phrase = params[:phrase]
+    count = 0
     binding.pry
-    "#{@number.each do @phrase end}"
   end
 
 end
