@@ -21,7 +21,6 @@ class App < Sinatra::Base
       @phrase_array << @phrase
     }
     "#{@phrase_array.join(" ")}"
-
   end
 
 end
