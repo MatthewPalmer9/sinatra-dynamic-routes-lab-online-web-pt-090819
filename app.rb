@@ -14,7 +14,7 @@ class App < Sinatra::Base
   end
 
   get '/say/:number/:phrase' do
-    @number = params[:number].to_i.to_a
+    @number = params[:number].to_a
     @phrase = params[:phrase]
     "#{@number.each do @phrase end}"
   end
