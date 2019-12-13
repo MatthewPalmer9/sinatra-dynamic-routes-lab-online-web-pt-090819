@@ -33,4 +33,8 @@ class App < Sinatra::Base
     "#{@word_array.join(" ")}."
   end
 
+  get '/:operation/:number1/:number2' do
+    
+  end
+
 end
