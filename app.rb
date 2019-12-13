@@ -13,4 +13,10 @@ class App < Sinatra::Base
     "#{params[:number]} squared is #{@squared**2}."
   end
 
+  get '/say/:number/:phrase' do
+    @number = params[:number]
+    @phrase = params[:phrase]
+    "#{@number.times() do @phrase end}"
+  end
+
 end
