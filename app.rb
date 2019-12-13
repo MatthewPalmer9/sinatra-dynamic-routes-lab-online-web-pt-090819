@@ -8,4 +8,9 @@ class App < Sinatra::Base
     "#{params[:name]} backwards is #{@name}."
   end
 
+  get '/square/:number' do
+    @squared = params[:number].to_i
+    "#{params[:number]} squared is #{@squared**2}."
+  end
+
 end
